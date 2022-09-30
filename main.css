@@ -1,0 +1,116 @@
+/* RESET */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+.body {
+    font-family: 'Fraunces', serif;
+}
+/* UTILITY */
+
+.purple {
+    color: hsl(277, 64%, 61%);
+}
+/* STYLINGS */
+.body {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(233, 47%, 7%);
+    padding: 2rem;
+}
+.main{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: .5rem;
+}
+.main__section {
+    width: 100%;
+}
+.main__image-container {
+    margin-bottom: 2rem;
+}
+.main__picture {}
+.main__img {
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+}
+.main__content {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__title {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+.main__paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: center;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+.main__list {
+    display: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__p {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 700;
+    font-size: 1.2rem
+}
+
+.gray {
+    display: block;
+    margin: .5rem 0;
+    color: hsla(0, 0%, 100%, 0.6); 
+    font-weight: 400;
+    font-size: .8rem;;
+}
+
+@media screen and (min-width: 900px) {
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__section,.main__content {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__picture {
+        width: 100%;
+
+    }
+    .main {
+        padding: 0;
+        margin: 0;
+    }
+    .main__image-container {
+        margin-bottom: 0;
+    }
+    .main__img {
+        border-radius: 0;
+    }
+    .main__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+  }
+

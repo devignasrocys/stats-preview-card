@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./main.css" />
+    <title>stats preview card component</title>
+  </head>
+  <!-- BODY -->
+  <body class="body">
+    <!-- MAIN -->
+    <main class="main">
+      <!-- IMAGE CONTAINER -->
+      <section class="main__section">
+        <!-- PICTURE -->
+        <article class="main__image-container">
+          <!--PICTURE SOURCE -->
+          <picture class="main__picture">
+            <!-- PICTURE SOURCE MOBILE -->
+            <source
+              srcset="./images/image-header-mobile.jpg"
+              media="(max-width: 450px)"
+            />
+            <!-- PICTURE IMAGE -->
+            <img
+              src="./images/image-header-desktop.jpg"
+              alt="image"
+              class="main__img"
+            />
+          </picture>
+        </article>
+      </section>
+      <!-- CONTENT -->
+      <section class="main__content">
+        <!-- CONTENT TITLE -->
+        <h1 class="main__title">Get <span class="purple">insights</span> that help your business grow.</h1>
+        <!-- CONTENT PARAGRAPH -->
+        <p class="main__paragraph">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <!-- CONTENT LIST -->
+        <ul class="main__list">
+          <!-- CONTENT LIST ITEM -->
+          <li class="main__list-item">
+            <!-- CONTENT P -->
+            <p class="main__p">
+              10K+ </br>
+              <!-- GRAY ELEMENT -->
+              <span class="gray"> COMPANIES </span>
+            </p>
+          </li>
+          <!-- CONTENT LIST ITEM -->
+          <li class="main__list-item">
+            <!-- CONTENT P -->
+            <p class="main__p">
+              314 </br>
+              <!-- GRAY ELEMENT -->
+              <span class="gray"> TEMPLATES </span>
+            </p>
+          </li>
+          <!-- CONTENT LIST ITEM -->
+          <li class="main__list-item">
+            <!-- CONTENT P -->
+            <p class="main__p">
+              12M+ </br>
+              <!-- GRAY ELEMENT -->
+              <span class="gray"> QUERIES </span>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
